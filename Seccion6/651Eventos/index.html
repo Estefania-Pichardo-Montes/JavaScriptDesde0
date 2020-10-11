@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jugando con eventos</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<script src="seccion651.js"></script>
+
+	<button onclick="evento()">Soy un boton</button><br><br>
+
+	<button ondblclick="evento()">
+		Me disparo al dar doble click
+	</button><br><br>
+
+	<div onclick="evento()">
+		
+	</div>
+
+	<br><br>
+	<label>Se dispara cuando se coloca el foco</label>
+	<input type="text" onfocus="evento()">
+	<br><br>
+	<label>Se dispara cuando pierde el foco</label>
+	<input type="text" onblur="evento()">
+
+	<br><br>
+
+	<label>Se dispara cuando el mouse sale</label>
+	<input type="text" onmouseleave="evento()">
+
+	<br><br>
+
+	<input type="text" id="ObjDemo">
+	<br><br>
+
+	<button id="ObjDemo2">Soy el objeto 2</button>
+
+</body>
+</html>
